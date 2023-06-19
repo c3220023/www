@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body{
+    width: 2000px;
+    height: 2000px;
+}
+header{
+    width: 2000px;
+}
+
+.ロゴ{
+    margin-left: 900px;
+    margin-top: 40px;
+}
+
+/*https://wp-load.in/html-css/html-display-flex*/
+
+.メニューバー{padding-top:  40px;}
+
+nav{
+    width: 2000px;
+    list-style: none;
+    border-top: dotted 1px gray;
+    border-bottom:dotted 1px gray;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;      
+}
+
+ul{
+    display: flex;
+    margin-left: 60px;
+    font-size: 30px;  
+}
+
+li{
+    list-style: none;
+    color: black;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 100px;
+}
+
+small{color: gray;  
+    margin-left: 80px;
+        font-size: 30px;
+}
+/*https://weblan3.com/html/special-character#spc-kumimoji*/
+
+main{width: 2000px;}
+    /*大写真以下*/
+
+.表題{
+    width: 2000px;
+    margin-left: 80px;
+    padding-top: 60px;
+    
+    font-size: 20px;
+}
+    /*写真下文字*/
+h1{font-size: 30px;
+   font-family: serif;
+}
+p{font-size: 26px;}
+
+/*全体指示*/
+.海{
+    width: 600px;
+    height: 600px;
+    margin-left: 40px;
+    padding-top: 60px;
+    padding-left: 40px;
+    font-size: 20px;
+    float: left;
+    overflow: hidenn;
+}
+.ベッド{
+
+width: 600px;
+height: 600px;
+margin-left: 40px;
+padding-top: 60px;
+
+font-size: 20px;
+float: left;
+overflow: hidenn;
+}
+/*写真指示*/
+#sea{
+width: 700px;
+height: 400px;
+}
+
+#bed{
+width: 700px;
+height: 400px;
+ }
+
+/*写真以下指示*/
+h2{ width: 2000px;
+    font-family: serif;
+    font-size: 30px;
+}
+.海 p{
+    width: 2000px;
+    text-align: left;
+    font-size: 24px;
+}
+.ベッド p{
+    width: 2000px;
+    padding-top: 15px;
+    text-align: left;
+    font-size: 24px;
+}
+
+
+</style>
+<body>
+
+<header>
+
+<section class="ロゴ">
+    <img src="images/rogo.png" alt="ロゴ">
+</section>
+
+<section class="メニューバー">
+    <nav>
+        <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="consept.html">COMCEPT</a></li>
+            <li><a href="#">STAY</a></li>
+            <li><a href="#">PAGE SAMPLE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">DOWNLOAD</a></li>
+        </ul>
+    </nav>
+</section>
+
+<small>&#8962;　＞　COMCEPT</small>
+
+</header>
+
+<main>
+    <section class="表題">
+        <img src="images/CO_dai.png" alt="コンセプト題">
+        <h1>
+        LUXE, a stylish and luxurious WordPress theme
+    </h1>
+    <p>LUXE is a WordPress theme that can used for hotels,beauty salons,apparel,wedding halls,cosmetic<br>
+        website,and more.The beautiful and luxurious degin is suitable for adding more polish to top-notch brands and<br>
+        can greatly improve their images.
+    </p>
+    <p></p>
+    <p>Many websites do not focus on beauty,especially in industries where beauty and images are important,such as<br>
+        hoteles and beauty salons.With LUXE,you can create a beautiful site at an unbelievably low cost,better than<br>
+        anything any other production company can create.</p>
+
+    </section>
+    
+</main>
+
+
+<footer>
+    <article>
+        <section class="海">
+            <img src="images/CO_umi.png" alt="sea" id="sea">
+            <h2><br>
+                 Gentle breeze,sparking water<br>
+                Chipring birds</h2>
+            <p><br>The endless blue sea makes you forget your busy life.</p>
+        </section>
+    
+        <section class="ベッド">
+            <img src="images/CO_bed.png" alt="bed" id="bed">
+            <h2>Enjoy the blessings of nature and pursue greatronomy.<br>
+                A hotel with a passion for food.</h2>
+            <p><br>
+                Enjoy the freshest fish from local sea and seasonal<br>
+                vegetables from the region on the ocean terrace.It is not</p>
+        </section>
+    </article>
+    
+
+</footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body{
+    width: 2000px;
+    height: 2000px;
+}
+header{
+    width: 2000px;
+}
+/*リセット*/
+.写真１ p,.写真２ p,.写真３ p{
+        margin: 0;
+        padding: 0px;
+}
+
+.ロゴ{
+    margin-left: 900px;
+    margin-top: 40px;
+}
+
+/*https://wp-load.in/html-css/html-display-flex*/
+
+.メニューバー{padding-top:  40px;}
+
+nav{
+    width: 2000px;
+    list-style: none;
+    border-top: dotted 1px gray;
+    border-bottom:dotted 1px gray;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;      
+}
+
+ul{
+    display: flex;
+    margin-left: 60px;
+    font-size: 30px;  
+}
+
+li{
+    list-style: none;
+    color: black;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 100px;
+}
+
+main{width: 2000px;}
+    /*大写真以下*/
+.表題{
+    width: 2000px;
+    padding-top: 60px;
+    padding-left: 60px;
+    font-size: 20px;
+}
+    /*写真下文字*/
+h1{
+    margin-left: 350px;
+    font-size: 40px;
+    font-family: serif;
+}
+
+p{
+
+    margin-left: 200px;
+    font-size: 20px;
+
+}
+    /*写真１~*/
+.写真１{
+
+    width: 400px;
+    margin-left: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    float: left;
+    overflow: hidenn;
+
+}
+
+h2{
+
+    width:600px;
+    font-size: 30px;
+    font-style: initial;
+
+}
+
+.写真１ p{
+
+    font-size: 20px;
+    width:800px;
+    padding-top: 25px;
+
+}
+
+
+.写真２{
+
+    width: 400px;
+    padding-left:200px;
+    margin-top: 20px;
+    margin-left: 100px;
+    float: left;
+    overflow: hidenn;    
+}
+
+h3{
+
+    width:400px;
+    font-size: 30px;
+    font-style: initial;
+}
+
+.写真２ p{
+
+    width:800px;
+    font-size: 20px;
+    padding-top: 25px;
+
+}
+
+.写真３{
+
+    width: 400px;
+    padding: 10px;
+    padding-left:200px;
+    margin-top: 10px;
+    margin-left: 100px;
+    float: left;
+    overflow: hidenn;
+
+}
+
+h4{
+
+    width:400px;
+    font-size: 30px;
+    font-style: initial;
+
+}
+
+.写真３ p{
+    font-size: 20px;
+    width:800px;
+}
+
+.下のリスト nav{
+    border-top: dotted 1px white;
+    border-bottom:dotted 1px white;
+}
+.下のリスト ul{
+    display: block;
+}
+.下のリスト li{
+    list-style: none;
+    border-top: dotted 1px gray;
+    border-bottom:dotted 1px gray;
+    color: black;
+    font-size: 30px;
+}
+
+footer{width: 2000px;}
+
+/*1020*/
+#listdai{
+width: 500px;
+
+float: left;
+overflow: hidenn;    
+}
+
+footer h2{
+width: 820px;
+padding-top: 40px; padding-left: 40px;
+float: left;}
+
+#kiji p{
+    width: 200px;
+    padding-top: 45px;
+    float: right;
+}
+.写真４{
+    width: 400px;
+    float: left;
+    overflow: hidenn;  
+}
+/*.downdai{
+    width: 1020px;
+}
+
+h5{
+    width: 820px;
+    padding-top: 40px;
+    padding-left: 40px;
+    float: left;
+    font-size: 30px;    
+}
+.daownkiji{
+        width: 200px;
+        padding-top: 45px;
+        float: right;
+        font-size: 30px;
+}*/
+
+</style>
+<body>
+
+<header>
+
+<section class="ロゴ">
+    <img src="images/rogo.png" alt="ロゴ">
+</section>
+
+<section class="メニューバー">
+    <nav>
+        <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="consept.html">COMCEPT</a></li>
+            <li><a href="#">STAY</a></li>
+            <li><a href="#">PAGE SAMPLE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">DOWNLOAD</a></li>
+        </ul>
+    </nav>
+</section>
+
+
+
+
+</header>
+
+<main>
+
+   <section class="表題">
+       <img src="images/hyodai.png" alt="表題">
+       <h1>Stay in a Stylish and Luxurious Design Space.</h1>
+       <p>The Scenery,and Location Are Perfect,and the Food Us Excellent,This Resort Hotel Is Desicated to the Enjoyment of Nature's Bounty and the Pursuit of Fine Cuisine.</p>
+   </section>
+
+   <article>
+       <section class="写真１">
+           <img src="images/Photo1.png" alt="写真１">
+           <h2>Concept</h2>
+           <p>Stay in a stylish and Iuxurious design space.</p>
+       </section>
+
+       <section class="写真２">
+           <img src="images/Photo2.png" alt="写真２">
+           <h3>Hospitality</h3>
+           <p>A true resort life,where the richness of nature heals both body<br>
+           and soul.</p>
+       </section>
+
+       <section class="写真３">
+           <img src="images/Photo3.png" alt="写真３">
+           <h4>Restaurant</h4>
+           <p>The hotel is dedicated to the enjoyment of nature's bounty and<br>
+           the pursuit of gastronomy.</p>
+       </section>
+   </article>
+</main>
+
+
+<footer>
+<article>
+    <div class="listdai">
+        <h2>News Infomation</h2> 
+        <div id="kiji">
+            <p>older news</p> 
+        </div>
+    </div> 
+
+       <section class="下のリスト">
+           <nav>
+               <ul>
+                   <li>2020.12.18　　Update information on "LUME(tcd022)"</li>
+                   <li>2020.09.18　　Custom post type "Announcement" is available,</li>
+                   <li>2020.08.12　　WordPress theme"LUXE(tcd022)"is released.</li>
+               </ul>
+           </nav>
+       </section>
+       
+       <section class="写真４">
+        <img src="images/Photo4.png" alt="写真４">
+        
+    </section>
+      
+
+
+
+</article>
+    
+
+</footer>
+
+
+
+</body>
+
+</html>
