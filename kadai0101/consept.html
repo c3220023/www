@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+/*ヘッダー*/
+body{
+   margin: 0;
+}
+
+.header_logo {
+    height: auto;
+    text-align: center;
+}
+.header_navlist{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+}
+.header_navlist li {
+            margin: 16px 28px;
+            list-style: none;
+}
+.header_mainvisual {
+            margin:40px;
+}
+.header_mainvisual img{
+            width: auto;
+            border:10px solid #ddd;
+            box-sizing:border-box;
+}
+/*家マークのところ*/
+.back{
+    color: gray; 
+    font-family: 20px;
+    padding-left: 50px;
+}
+/*https://weblan3.com/html/special-character#spc-kumimoji*/
+
+
+/*メイン*/
+.main_content{
+    padding-left: 40px;
+}
+.main_content h1{
+    font-size: 50px;
+   font-family: serif;
+}
+.main_content p{
+    font-size: 26px;
+}
+
+/*メイン2*/
+.main_content h2{
+        font-family: serif;
+        
+       
+}
+.main_content2{
+    padding-left: 40px;
+}
+
+.seabed {
+        display: flex;
+        /*justify-content: space-between;*/
+}
+
+
+.seabed section img{
+        width: 680px;
+        height: 300px;
+}
+
+
+
+
+
+
+</style>
+<body>
+
+ <!--ヘッダー-->
+ <header>
+    <!--グローバルナビゲーション-->
+    <nav>
+        <div class="header_logo">
+            <img src="images/rogo.png" alt="ロゴ">
+        </div>
+        <ul class="header_navlist">
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="consept.html">COMCEPT</a></li>
+            <li><a href="#">STAY</a></li>
+            <li><a href="#">PAGE SAMPLE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">DOWNLOAD</a></li>
+        </ul>
+    </nav>
+    <div class="back">
+        &#8962;　＞　COMCEPT
+    </div>
+    <!--メインビジュアル-->
+     <div class="header_mainvisual">
+        <img src="images/CO_dai.png" alt="メインビジュアル">
+    </div>
+</header>
+
+<main>
+    <article class="main_content">
+        <h1>LUXE, a stylish and luxurious WordPress theme</h1>
+        <p>LUXE is a WordPress theme that can used for hotels,beauty salons,apparel,wedding halls,cosmetic<br>
+            website,and more.The beautiful and luxurious degin is suitable for adding more polish to top-notch brands and<br>
+            can greatly improve their images.
+        </p>
+        <br>
+        <p>Many websites do not focus on beauty,especially in industries where beauty and image are important,such as<br>
+            hoteles and beauty salons.With LUXE,you can create a beautiful site at an unbelievably low cost,better than<br>
+            anything any other production company can create.
+        </p>
+    </article>
+    
+
+
+
+    <article class="main_content2">
+        <div class="seabed">
+            <section>
+                <img src="images/CO_umi.png" alt="sea">
+                <h2>Gentle breeze,sparking water
+                    Chipring birds
+                </h2>
+                <p><br>The endless blue sea makes you forget your busy life.</p>       
+            </section>
+            <section>
+                <img src="images/CO_bed.png" alt="bed">
+                <h2>Enjoy the blessings of nature and pursue greatronomy.<br>
+                A hotel with a passion for food.</h2>
+                <p><br>
+                Enjoy the freshest fish from local sea and seasonal<br>
+                vegetables from the region on the ocean terrace.It is not</p>
+            </section>
+        </div>
+    </article>
+    
+</main>
+
+
+
+</body>
+
+</html>
