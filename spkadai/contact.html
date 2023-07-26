@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: antiquewhite;
+}
+    /* 問い合わせテーブル　*/
+table {
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+th,td {
+    border: 1px solid #333333;
+    padding: 5px;
+}
+th {
+    width: 200px;
+    background-color: firebrick;
+    color: white;
+}
+td {width: 600px;}
+#submit{text-align: right;}
+/* レスポシブルデザイン */
+@media screen and (max-width:979px) {
+    #wrap{width:100%;}
+    #logo{
+        display: block;
+        margin: 5px auto;
+        float: none;
+    }
+    #head_meg{
+        margin: 0;
+        text-align: center;
+        float: none;
+    }
+    h1{font-size:20px;}
+    #head_img{
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        width: 100%;
+        padding: 0;  
+    }
+    nav li{width:33.3%;}
+    nav a{
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size:100% 60px;
+    }
+    main{padding: 2%;}
+    h2{
+        font-size:20px;
+        width: 320px;
+        height: 48px;
+        margin: 15px auto;
+        background-size: contain;
+    }
+    th{
+        width: 25%;
+        min-width: 120px;
+        max-width: 200px;
+    }
+    textarea{width: 95%;}
+}
+</style>
+<body>
+    <article>                
+        <h2>お問い合わせ</h2>
+        <p>当サイトについて質問やご意見については
+            下記フォームよりお問い合わせください。<br>
+            また、任意ですがアンケート内容にも協力お願い致します。</p>
+
+        <form name="form1" action="https://api.staticforms.xyz/submit" method="post">
+
+            <input type="hidden" name="accessKey" value="7ce8b0f3-7b4b-40c1-b757-e49d5a6e499b">
+            
+            <table>
+                <tr>
+                    <th>氏名（必須）</th>
+                    <td><input type="text" name="name" size="30"></td>
+                </tr>
+                <tr>
+                    <th>Eメール（必須）</th>
+                    <td><input type="email" name="email" size="30"></td>
+                </tr>
+                <tr>                        
+                    <th>電話番号（任意）</th>
+                    <td><input type="tel" name="tel" size="30"></td>
+                </tr>
+                <tr>
+                    <th>アンケート（任意）</th>
+                    <td>
+                        <p>性別</p>
+                        <input type="radio" name="sex" value="男" checked="checked"> 男　
+                        <input type="radio" name="sex" value="女"> 女
+                        <p>サーティワンアイスクリームへの来店回数</p>
+                        <input type="radio" name="riyu" value="1">何度も行ったことがある
+                        <input type="radio" name="riyu" value="2">来店したことがある
+                        <input type="radio" name="riyu" value="3">来店したことはない
+                        <p>好きなアイス系</p>
+                        <input type="checkbox" name="riyu" value="1">フルーツ系
+                        <input type="checkbox" name="riyu" value="2">チョコ系
+                        <input type="checkbox" name="riyu" value="3">さっぱり系
+                        <input type="checkbox" name="riyu" value="4">コラボ系                        <input type="checkbox" name="riyu" value="5">その他
+                    </td>
+                </tr>
+                <tr>       
+                    <th>用件（必須）</th>
+                    <td>
+                        <select name="inquiry">
+                            <option value="">選択してください</option>
+                            <option value="sweets">ページ全体について</option>
+                            <option value="reservation">個々のアイスについて</option>
+                            <option value="request">サイトへの要望・ご意見</option>
+                             <option value="other">その他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>問い合わせ内容（必須）</th>
+                    <td><textarea name="freeans" rows="5" cols="60"></textarea></td>
+                </tr>
+                <tr>    
+                    <td colspan="2" id="submit">
+                        <input type="submit" value="送信">　
+                        <input type="reset" value="取り消し">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </article>
+</body>
+</html>
