@@ -1,0 +1,53 @@
+body{width: 800px;
+    margin-left: 70px;
+    padding-right: 70px;
+    background-color: ivory;}
+h1{ padding-top: 20px;
+    text-align: center;}
+header{
+    
+    background-color: white;
+    height: 300px;
+
+}
+nav{font-size: 15px;
+    
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+
+    border: 10px solid;
+    border-image: conic-gradient(#f5f551,#5eff5e,#84a1ff,
+    #ff45ff,#ff5a5a,#ffbc41,#f5f551)1;
+    height: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    background: linear-gradient(to right,#e60000,#f39800,#fff100,
+    #009944,#0068b7,#1d2088,#920783);
+
+    background-clip:text;
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    /* https://csshtml.work/rainbow/ */
+}
+img{width: 400px;
+    height: 400px;}
+ol{
+    font-size: 16px;
+}
+footer{
+    
+    background-color: aqua;
+}
