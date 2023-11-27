@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素の取得と内容変更</title>
+    <style>
+        #message{
+            width: 250px;
+           padding-top: 15px;
+        }
+        #yoyaku{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>座席の予約</h1>
+
+<p>東京会場 <nobr id="yoyaku"> <strong>（予約受付中）</strong></nobr></p>
+
+<div id="message"><button onclick="showAnser();">予約する</button></div>
+
+<script>
+function showAnser(){
+    document.getElementById('yoyaku').textContent ='（予約済み）';
+    let anserBox = document.getElementById('message');
+    anserBox.innerHTML = '<strong>ありがとうございました。</strong>';  
+}
+</script>
+</body>
+</html>
