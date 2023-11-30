@@ -1,0 +1,4 @@
+write('<img src=imgs/flag_CHN.png>')
+write('<img src=imgs/flag_IND.png/>')
+write('<img src=imgs/flag_USA.png>')
+write('<img src=imgs/flag_IDN.png>')
