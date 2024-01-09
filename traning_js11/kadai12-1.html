@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数の戻り値</title>
+    <style>
+        #message{
+            width: 500px;
+            padding: 15px;
+            margin: 25px 0px;
+            background-color: #FFcc99;
+        }
+    </style>
+</head>
+<body>
+<h1>1～10で割り切れる数字</h1>
+<p>1、2、3、4、5、6、7、8、9、10で<br>割り切れる最小の数値をJavaScriptで求めます。</p>
+<button onclick="check()">結果を見る</button>
+<div id="message">ここに結果が表示されます</div>
+
+<script>
+////////最大公約数求める
+function gcd(a,b){
+    return b === 0 ? a : gcd(b,a%b) ;
+}
+//////////
+//////////最小公倍数求める
+function lcm(a,b){
+    return(a * b) / gcd(a,b);
+}
+////////
+////10までの最小公倍数を求める
+//LCM_su関数から呼び出した[nに(10)を入れる]
+function LCM_su(n){
+    let text = '';
+    let result = 1;
+    for (let i = 2;i <= n; i++){
+        result = lcm(result,i);
+    }
+    return result;
+}
+
+////ボタン押して結果を出す
+function check(){
+    //箱名suuにLCM_su関数で求めたものを入れる。
+    let suu = LCM_su(10);
+    document.getElementById('message').textContent = suu;
+    document.getElementById('message').textContent = "答えは" + suu + "です。";
+}
+////
+</script>
+</h1>
+</body>
+</html>
