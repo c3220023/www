@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情報処理検定対策　関数編　</title>
+    <style>
+      body{
+        font-size: 23px;
+        width: 900px;
+      }
+      nav{font-size: 23px;}
+      nav ul li{
+      list-style: none;
+      display: inline-block;
+      border: 5px solid;
+      border-image: conic-gradient(#f5f551,#5eff5e,#84a1ff,
+      #ff45ff,#ff5a5a,#ffbc41,#f5f551)1;
+      height: 29px;
+      }
+      a{
+      text-decoration: none;
+      color: black;
+      }
+  
+  
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        color: white;
+        background-color: blue;
+      }
+      #history {
+        border: 1px solid blue;
+        width: 600px;
+      }
+      span.FX {
+        color: red;
+      }
+      span.kaisetu {
+        color: blue;
+      }
+      tr:nth-child(2n) {
+        background-color: lightblue;
+      }
+      </style>
+  </head>
+  <body>
+    <header>
+        <h1><h1>情報処理関数　１級</h1></h1>
+        <nav>
+          <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="3.html">３級関数</a></li>
+            <li><a href="2.html">２級関数</a></li>
+            <li><a href="1.html">１級関数</a></li>   
+        </ul>
+        </nav>
+    </header>
+
+    
+    <h2>「主な関数」　答えを（　）をクリックして確認してください。</h2>
+    <p>
+      （<span class="FX">CEILING</span>）関数は、<span class="kaisetu">指定した基準値の倍数に切り上げる</span>関数です。<br>
+      （<span class="FX">FLOOR</span>）関数は、<span class="kaisetu">指定した基準値の倍数に切り捨てる</span>関数です。<br>
+      （<span class="FX">ABS</span>）関数は、<span class="kaisetu">絶対値</span>を求める関数です。<br>
+      （<span class="FX">RANDBETWEEN</span>）関数は、<span class="kaisetu">指定数値の範囲内で乱数を発生させる</span>関数です。<br>
+      （<span class="FX">FORECAST</span>）関数は、<span class="kaisetu">回帰直線上の値</span>を求める関数です。<br>
+      （<span class="FX">MEDIAN</span>）関数は、<span class="kaisetu">範囲内の中央値</span>を求める関数です。<br>
+      （<span class="FX">MODE</span>）関数は、<span class="kaisetu">範囲内の最頻値</span>を求める関数です。<br>
+      （<span class="FX">COLUMN</span>）関数は、<span class="kaisetu">範囲内の列番号</span>を求める関数です。<br>
+      （<span class="FX">ROW</span>）関数は、<span class="kaisetu">範囲内の行番号</span>を行う関数です。<br>
+      （<span class="FX">OFFSET</span>）関数は、<span class="kaisetu">指定したセルを基準に相対位置にあるデータを利用</span>する関数です。<br>
+      （<span class="FX">DSUM</span>）関数は、<span class="kaisetu">条件を満たすレコードの合計</span>を求める関数です。<br>
+      （<span class="FX">DAVERAGE</span>）関数は、<span class="kaisetu">条件を満たすレコードの平均</span>を求める関数です。<br>
+      （<span class="FX">DCOUNT</span>）関数は、<span class="kaisetu">条件を満たすレコードの数値件数</span>を求める関数です。<br>
+      （<span class="FX">DCOUNTA</span>）関数は、<span class="kaisetu">条件を満たすレコードの文字列の件数</span>を求める関数です。<br>
+      （<span class="FX">DMAX</span>）関数は、<span class="kaisetu">条件を満たすレコードの最大値</span>を求める関数です。<br>
+      （<span class="FX">DMIN</span>）関数は、<span class="kaisetu">条件を満たすレコードの最小値</span>を求める関数です。<br>
+      （<span class="FX">SUBSTITUTE</span>）関数は、<span class="kaisetu">文字列の置き換え</span>を行う関数です。<br>
+      （<span class="FX">IFERROR</span>）関数は、<span class="kaisetu">エラー時の処理</span>を行う関数です。<br>
+    </p>
+
+    <script>
+      window.onload = init;
+      function init() {
+        let FX = document.querySelectorAll("span.FX");
+        for (let i = 0; i < FX.length; i++) {
+          let y = FX[i];
+          y.answer = y.textContent;
+          y.textContent = "____";
+          y.onclick = function (e) {
+            e.target.textContent = e.target.answer;
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

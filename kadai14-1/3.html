@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情報処理検定対策　関数編　</title>
+    <style>
+    body{
+      font-size: 23px;
+      width: 900px;
+    }
+    nav{font-size: 23px;}
+    nav ul li{
+    list-style: none;
+    display: inline-block;
+    border: 5px solid;
+    border-image: conic-gradient(#f5f551,#5eff5e,#84a1ff,
+    #ff45ff,#ff5a5a,#ffbc41,#f5f551)1;
+    height: 29px;
+    }
+    a{
+    text-decoration: none;
+    color: black;
+    }
+
+
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      color: white;
+      background-color: blue;
+    }
+    #history {
+      border: 1px solid blue;
+      width: 600px;
+    }
+    span.FX {
+      color: red;
+    }
+    span.kaisetu {
+      color: blue;
+    }
+    tr:nth-child(2n) {
+      background-color: lightblue;
+    }
+    </style>
+    
+  </head>
+  <body>
+    <header>
+        <h1><h1>情報処理関数　３級</h1></h1>
+        <nav>
+          <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="3.html">３級関数</a></li>
+            <li><a href="2.html">２級関数</a></li>
+            <li><a href="1.html">１級関数</a></li>   
+        </ul>
+        </nav>
+    </header>
+
+    
+    <h2>「主な関数」　答えを（　）をクリックして確認してください。</h2>
+    <p>
+      （<span class="FX">SUM</span>）関数は、<span class="kaisetu">指定範囲のデータの合計</span>を求める関数です。<br>
+      （<span class="FX">AVERAGE</span>）関数は、<span class="kaisetu">指定範囲のデータの平均値</span>を求める関数です。<br>
+      （<span class="FX">MAX</span>）関数は、<span class="kaisetu">指定範囲のデータの最大値</span>を求める関数です。<br>
+      （<span class="FX">MIN</span>）関数は、<span class="kaisetu">指定範囲のデータの最小値</span>を求める関数です。<br>
+      （<span class="FX">COUNT</span>）関数は、<span class="kaisetu">指定範囲の数値データの件数</span>を求める関数です。<br>
+      （<span class="FX">COUNTA</span>）関数は、<span class="kaisetu">指定範囲の文字列を含むデータの件数</span>を求める関数です。<br>
+      （<span class="FX">IF</span>）関数は、<span class="kaisetu">論理式を組みデータの判別</span>を求める関数です。<br>
+      （<span class="FX">ROUND</span>）関数は、<span class="kaisetu">指定した桁数で四捨五入した値</span>を求める関数です。<br>
+      （<span class="FX">ROUNDUP</span>）関数は、<span class="kaisetu">指定した桁数で切り上げした値</span>を行う関数です。<br>
+      （<span class="FX">ROUNDDOWN</span>）関数は、<span class="kaisetu">指定した桁数で切り捨てした値</span>を求める関数です。<br>
+      （<span class="FX">RANK</span>）関数は、<span class="kaisetu">指定範囲の中で順位付け</span>を行う関数です。<br>
+      （<span class="FX">LEN</span>）関数は、<span class="kaisetu">選択したセル内の文字列の長さ</span>を求める関数です。<br>
+      （<span class="FX">LEFT</span>）関数は、<span class="kaisetu">選択したセル内の左から文字を抽出</span>する関数です。<br>
+      （<span class="FX">RIGHT</span>）関数は、<span class="kaisetu">選択したセル内の右から文字を抽出</span>する関数です。<br>
+      （<span class="FX">MID</span>）関数は、<span class="kaisetu">選択したセル内の途中から文字を抽出</span>する関数です。<br>
+      （<span class="FX">VALUE</span>）関数は、<span class="kaisetu">選択したセルを数値に変換</span>する関数です。<br>
+      （<span class="FX">TODAY</span>）関数は、<span class="kaisetu">今日の日付</span>を求める関数です。<br>
+      （<span class="FX">NOW</span>）関数は、<span class="kaisetu">現在の時刻</span>を求める関数です。<br>
+    </p>
+    <script>
+      window.onload = init;
+      function init() {
+        let FX = document.querySelectorAll("span.FX");
+        for (let i = 0; i < FX.length; i++) {
+          let y = FX[i];
+          y.answer = y.textContent;
+          y.textContent = "____";
+          y.onclick = function (e) {
+            e.target.textContent = e.target.answer;
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

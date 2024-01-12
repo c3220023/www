@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+
+<script>
+    ///完全に機能しない　HTMLを組む必要あり//
+    window.confirm("次の操作を始めていい？")
+     function ask(question,yes,no){
+            if(confilm(question))yes()
+            else no()
+        }
+
+        ask(
+            "次の操作を始めてもいい？",
+            function(){ alert("移動する！")},
+            function(){ alert("このページに留まる")}
+        )
+</script>
+       
+</body>
+</html>

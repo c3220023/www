@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情報処理検定対策　関数編　</title>
+    <style>
+      body{
+        font-size: 23px;
+        width: 900px;
+      }
+      nav{font-size: 23px;}
+      nav ul li{
+      list-style: none;
+      display: inline-block;
+      border: 5px solid;
+      border-image: conic-gradient(#f5f551,#5eff5e,#84a1ff,
+      #ff45ff,#ff5a5a,#ffbc41,#f5f551)1;
+      height: 29px;
+      }
+      a{
+      text-decoration: none;
+      color: black;
+      }
+  
+  
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        color: white;
+        background-color: blue;
+      }
+      #history {
+        border: 1px solid blue;
+        width: 600px;
+      }
+      span.FX {
+        color: red;
+      }
+      span.kaisetu {
+        color: blue;
+      }
+      tr:nth-child(2n) {
+        background-color: lightblue;
+      }
+      </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><h1>情報処理関数　２級</h1></h1>
+        <nav>
+          <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="3.html">３級関数</a></li>
+            <li><a href="2.html">２級関数</a></li>
+            <li><a href="1.html">１級関数</a></li>   
+        </ul>
+        </nav>
+    </header>
+
+    
+    <h2>「主な関数」　答えを（　）をクリックして確認してください。</h2>
+    <p>
+      （<span class="FX">VLOOKUP</span>）関数は、<span class="kaisetu">指定した文字列を列方向に参照する</span>関数です。<br>
+      （<span class="FX">HLOOKUP</span>）関数は、<span class="kaisetu">指定した文字列を行方向に参照する</span>関数です。<br>
+      （<span class="FX">INDEX</span>）関数は、<span class="kaisetu">配列から縦横座標で値を抽出する</span>関数です。<br>
+      （<span class="FX">MATCH</span>）関数は、<span class="kaisetu">値を検索し範囲内における相対位置</span>を求める関数です。<br>
+      （<span class="FX">COUNTIFS</span>）関数は、<span class="kaisetu">指定範囲の条件に一致する件数</span>を求める関数です。<br>
+      （<span class="FX">SUMIFS</span>）関数は、<span class="kaisetu">指定範囲の条件を満たす合計</span>を求める関数です。<br>
+      （<span class="FX">AVERAFEIFS</span>）関数は、<span class="kaisetu">指定範囲の条件を満たす平均</span>を求める関数です。<br>
+      （<span class="FX">LARGE</span>）関数は、<span class="kaisetu">ｎ番目に大きい数値を</span>を求める関数です。<br>
+      （<span class="FX">SMALL</span>）関数は、<span class="kaisetu">ｎ番目に小さい数値を</span>を求める関数です。<br>
+      （<span class="FX">TEXT</span>）関数は、<span class="kaisetu">数値を書式設定した文字列で表示</span>する関数です。<br>
+      （<span class="FX">SEARCH</span>）関数は、<span class="kaisetu">大文字小文字を区別せず文字列の検索</span>を行う関数です。<br>
+      （<span class="FX">FIND</span>）関数は、<span class="kaisetu">大文字小文字を区別して文字列の検索</span>を行う関数です。<br>
+      （<span class="FX">INT</span>）関数は、<span class="kaisetu">指定した数値を越えない最大の整数</span>を求める関数です。<br>
+      （<span class="FX">MOD</span>）関数は、<span class="kaisetu">除算の余り</span>を求める関数です。<br>
+      （<span class="FX">DATE</span>）関数は、<span class="kaisetu">特定の日付のシリアル値</span>を求める関数です。<br>
+      （<span class="FX">DAY</span>）関数は、<span class="kaisetu">シリアル値から日</span>を求める関数です。<br>
+      （<span class="FX">MONTH</span>）関数は、<span class="kaisetu">シリアル値から月</span>を求める関数です。<br>
+      （<span class="FX">YEAR</span>）関数は、<span class="kaisetu">シリアル値から年</span>を求める関数です。<br>
+      （<span class="FX">WEEKDAY</span>）関数は、<span class="kaisetu">シリアル値から曜日</span>を求める関数です。<br>
+      （<span class="FX">TIME</span>）関数は、<span class="kaisetu">時刻を計算して</span>求める関数です。<br>
+      （<span class="FX">HOUR</span>）関数は、<span class="kaisetu">シリアル値から時間</span>を求める関数です。<br>
+      （<span class="FX">MINUTE</span>）関数は、<span class="kaisetu">シリアル値から分</span>を求める関数です。<br>
+      （<span class="FX">SECOND</span>）関数は、<span class="kaisetu">シリアル値から秒</span>を求める関数です。<br>
+      （<span class="FX">AND</span>）関数は、<span class="kaisetu">論理式「条件をすべて満たす」</span>とする時の関数です。<br>
+      （<span class="FX">OR</span>）関数は、<span class="kaisetu">論理式「条件をいずれか満たす」</span>とする時の関数です。<br>
+      （<span class="FX">NOT</span>）関数は、<span class="kaisetu">論理式「条件をすべて満たさない」</span>とする時の関数です。<br>
+
+    </p>
+
+    <script>
+      window.onload = init;
+      function init() {
+        let FX = document.querySelectorAll("span.FX");
+        for (let i = 0; i < FX.length; i++) {
+          let y = FX[i];
+          y.answer = y.textContent;
+          y.textContent = "____";
+          y.onclick = function (e) {
+            e.target.textContent = e.target.answer;
+          };
+        }
+      }
+    </script>
+  </body>
+</html>
