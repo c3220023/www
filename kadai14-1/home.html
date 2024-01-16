@@ -64,8 +64,28 @@
     <h3>このサイトは、全商情報処理検定３級、<br>
         ビジネス情報部門２級・１級の関数<br>
         の暗記を目的としたサイトです。
-        
     </h3>
-  
+    <button onclick="ch(3)">３級</button>
+    <button onclick="ch(2)">２級</button>
+    <button onclick="ch(1)">１級</button>
+
+    <p>あなたが行う級を上のボタンから選択してください</p>
+    <div id="ch"></div>
+    <div id="haji"></div>
+    <div id="kaku"></div>
   </body>
+  <script>
+    function ch(n){
+      document.getElementById("ch").textContent = "あなたが受けるのは"+n+"級でよろしいですね";
+      document.getElementById("haji").textContent = "それでは、虹色で囲っているボタンから"+n+"級を選んでページに進んでください。";
+      
+      if(n==3){
+        alert("初心者レベルですね")
+      }else if(n==2)
+        alert("中級レベルですね")
+      else
+        alert("上級者レベルですね。");
+    }
+    
+  </script>
 </html>
